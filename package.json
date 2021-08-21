@@ -34,7 +34,6 @@
   "author": "@Bill2015",
   "license": "MIT",
   "devDependencies": {
-    "@monaco-editor/loader": "^1.1.1",
     "@types/diff": "^5.0.1",
     "@types/mocha": "^8.2.0",
     "@typescript-eslint/eslint-plugin": "^4.11.0",
