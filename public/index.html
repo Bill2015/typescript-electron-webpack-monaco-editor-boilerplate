@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval'; object-src 'self';">
+    <style>
+      #monaco-test {
+        width: 1600px;
+        height: 1200px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  <body>
+    <h1>Hello World Hi!</h1>
+    We are using Node.js <span id="node-version"></span>, Chromium
+    <span id="chrome-version"></span>, and Electron
+    <span id="electron-version"></span>.
+
+    <h1>Denpendencies Testing!</h1>
+    <h2>Git Testing</h2>
+    <span id="git-test"></span><br/>
+    <h2>Diff Testing</h2>
+    <span id="diff-test"></span><br/>
+    <h2>Monaco Editor Testing</h2>
+    <div id="monaco-test"></div><br/>
+ 
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.bundle.js"></script>
+    <script src="./app.bundle.js"></script>
+  </body>
+</html>
